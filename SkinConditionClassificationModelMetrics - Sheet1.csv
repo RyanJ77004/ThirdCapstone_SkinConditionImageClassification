@@ -1,0 +1,29 @@
+Data Input,,
+batch_size,32,Batch Size
+epochs,25,Epochs
+Image Augmentation,,
+rescale,"1./255,",Rescale Value
+shear_range,"0.3,",Image Augmentation - Shear Range
+zoom_range,"0.3,",Image Augmentation - Zoom Range
+rotation_range,"30,",Image Augmentation - Rotation Range
+horizontal_flip,TRUE,Image Augmentation - Horizontal Flip
+CNN Parameters,,
+padding,"""'same""",CNN - Padding
+kernel_initializer,"""he_normal""",CNN - Layer Weight Initializer
+Activation,"""elu""",CNN - Activation Layer
+dropout_fc,0.5,Drop Out Rate for Fully Connected Layers
+dropout_cnn,0.25,Drop Out Rate for Convolutional Layers
+"im_rows, im_cols","64, 64",Image Resize resolution
+,,
+Performance Results - My Model - Skin Image Set,,
+Validation Loss,2.5096,
+Validation Accuracy,20.44%,
+Performance Results - Resnet50 Model - Skin Image Set,,
+Validation Loss,2.9473,
+Validation Accuracy,16.73%,
+Performance Results - My Model - CiFar10 Image Set,,
+Validation Loss,0.4913,
+Validation Accuracy,81.59%,
+Performance Results - Resnet50 Model - CiFar10 Image Set,,
+Validation Loss,0.5594,
+Validation Accuracy,82.43%,
